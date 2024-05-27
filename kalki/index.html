@@ -12,9 +12,13 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
   </head>
   <body>
+    <!-- header  -->
     <header>
-      <div class="top-header">
-        <i class="fa-solid fa-video"></i>Styled more than 100,000 Clients
+      <div class="top-header owl-carousel top-header-slider">
+        <div class="slider-item">
+          <i class="fa-solid fa-video"></i>Styled more than 100,000 Clients
+        </div>
+        <div class="slider-item"><i class="fa-solid fa-video"></i> testing</div>
       </div>
       <div class="middle-header container">
         <div class="nav">
@@ -75,21 +79,92 @@
         </div>
       </div>
     </header>
-
+    <!-- banner section  -->
     <section class="banner-section container">
-      <div class="owl-carousel">
+      <div class="owl-carousel banner-slider">
         <img src="images/banner.avif" alt="" />
         <img src="images/banner-2.avif" alt="" />
       </div>
     </section>
 
+    <!-- services section  -->
+    <section class="services container">
+      <div class="services-item">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h2>24-hour Dispatch</h2>
+      </div>
+      <div class="services-item">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h2>Easy Returns</h2>
+      </div>
+      <div class="services-item">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h2>Easy Returns</h2>
+      </div>
+      <div class="services-item">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h2>Easy Returns</h2>
+      </div>
+      <div class="services-item">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h2>Easy Returns</h2>
+      </div>
+    </section>
+
+    <section class="product-category container">
+      <div class="cartegory-card">
+        <figure>
+          <img src="images/product.avif" alt="">
+        </figure>
+        <div class="prodcut-description">
+          <h2>Season's bestseller</h2>
+          <a href="" class="card-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="cartegory-card">
+        <figure>
+          <img src="images/p-1.avif" alt="">
+        </figure>
+        <div class="prodcut-description">
+          <h2>Season's bestseller</h2>
+          <a href="" class="card-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="cartegory-card">
+        <figure>
+          <img src="images/p2.avif" alt="">
+        </figure>
+        <div class="prodcut-description">
+          <h2>Season's bestseller</h2>
+          <a href="" class="card-button">Shop Now</a>
+        </div>
+      </div>
+      <div class="cartegory-card">
+        <figure>
+          <img src="images/p3.avif" alt="">
+        </figure>
+        <div class="prodcut-description">
+          <h2>Season's bestseller</h2>
+          <a href="" class="card-button">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+
+
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script>
       $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          items:1,
+        $(".banner-slider").owlCarousel({
+          items: 1,
           loop: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+        });
+        // top header
+        $(".top-header-slider").owlCarousel({
+          items: 1,
         });
       });
     </script>

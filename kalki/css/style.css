@@ -4,20 +4,20 @@
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 1260px;
     margin: 0px auto;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-ul li{
+ul li {
     display: inline-block;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
@@ -25,57 +25,68 @@ a{
 
 /* header css  */
 
-header .top-header{
+header .top-header {
     background-color: black;
     color: white;
     text-align: center;
     padding: 5px 0px;
     font-size: 14px;
 }
-header .top-header i{
+
+header .top-header i {
     padding-right: 10px;
 }
-header .middle-header{
+
+header .middle-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px;
 }
-.middle-header ul li{
+
+.middle-header ul li {
     margin-right: 20px;
 }
-.middle-header .search{
+
+.middle-header .search {
     display: flex;
     gap: 100px;
 }
+
 .middle-header .search form {
-  display: flex;
+    display: flex;
 }
-.middle-header .search form input{
+
+.middle-header .search form input {
     padding: 7px 10px;
     border: 1px solid black;
     background-color: gainsboro;
     border-radius: 5px 0px 0px 5px;
 }
-.middle-header .search button{
+
+.middle-header .search button {
     background-color: black;
     color: white;
     padding: 5px;
     border: none;
     border-radius: 0px 5px 5px 0px;
 }
+
 .middle-header .icons {
- display: flex;
- gap: 15px;
+    display: flex;
+    gap: 15px;
 }
-.middle-header .icons i{
+
+.middle-header .icons i {
     font-size: 26px;
     color: black;
 }
-.middle-header .icons .wishlist{
+
+.middle-header .icons .wishlist {
     position: relative;
 }
-.icons .wishlist span{
+
+.icons .wishlist span {
     background-color: red;
     color: white;
     padding: 6px 8px;
@@ -85,16 +96,89 @@ header .middle-header{
     top: -16px;
     right: -16px;
 }
-.bottom-header{
+
+.bottom-header {
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
 }
-.bottom-header ul li{
+
+.bottom-header ul li {
     margin-right: 8px;
     font-size: 14px;
     padding: 10px 0px;
 }
-.bottom-header ul li:hover{
-color: red;
-border-bottom: 1px solid red;
+
+.bottom-header ul li:hover {
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+/* .banner-slider .owl-dots button span{
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    margin: 5px;
+    border-radius: 50%;
+}
+.banner-slider  .owl-dots .active span{
+    background-color: green;
+} */
+
+.services {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.services-item {
+    text-align: center;
+}
+
+.services-item i {
+    font-size: 40px;
+}
+
+.services-item h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.product-category {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cartegory-card {
+    position: relative;
+}
+
+.prodcut-description {
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    bottom: 30px;
+}
+
+.prodcut-description h2 {
+    color: white;
+    text-align: center; 
+    margin-bottom: 15px;
+}
+
+.prodcut-description .card-button {
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    width: fit-content;
+    display: block;
+    margin: 0px auto;
+}
+
+.prodcut-description .card-button:hover {
+    text-decoration: underline;
+
 }
