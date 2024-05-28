@@ -126,7 +126,6 @@ header .middle-header {
 } */
 
 .services {
-    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
@@ -146,9 +145,9 @@ header .middle-header {
 }
 
 .product-category {
-    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 .cartegory-card {
@@ -181,4 +180,50 @@ header .middle-header {
 .prodcut-description .card-button:hover {
     text-decoration: underline;
 
+}
+
+.video-shopping {
+    padding: 50px 0px;
+    background-image: url("../images/video-shopping-banner16-8-2023.avif");
+    color: white;
+    text-align: center;
+}
+.video-shopping h2{
+    font-size: 36px ;
+}
+.video-shopping form{
+    margin-top: 20px;
+}
+.video-shopping form input{
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+.video-shopping form button{
+    background-color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+}
+.video-shopping form button:hover{
+    background-color: black;
+    color: white;
+}
+.section-heading{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.margin-top{
+    margin-top: 50px;
+}
+.editiors-picks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+ img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
